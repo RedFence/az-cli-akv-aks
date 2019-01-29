@@ -1,0 +1,13 @@
+# Create a key in a vault, a key that expires on a certain day
+az keyvault key create -n zzz-test-key-002 --expires 2019-01-31 --vault-name zzz-test-akv-001
+
+# Show vault details
+az keyvault show -n zzz-test-akv-001
+
+# List all keys in a vault, by vault name
+az keyvault key list --vault-name zzz-test-akv-001
+
+# List all keys in a vault, by vault base url?
+# az keyvault key list --vault-base-url https://zzz-test-akv-001.vault.azure.net/
+
+# az keyvault key set-attributes --vault-base-url
